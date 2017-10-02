@@ -137,3 +137,6 @@ rabbitmq:
         host: localhost
         username: guest
         password: guest
+    exchanges:
+      - name: rpc.exchange
+        type: fanout
