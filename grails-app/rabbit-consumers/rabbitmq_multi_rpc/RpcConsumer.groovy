@@ -6,7 +6,6 @@ class RpcConsumer {
 
     static rabbitConfig = [
         exchange: "rpc.exchange",
-        consumers: 10,
     ]
 
     def handleMessage(def body, MessageContext messageContext) {
