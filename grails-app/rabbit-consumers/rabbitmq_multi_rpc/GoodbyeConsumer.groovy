@@ -2,7 +2,7 @@ package rabbitmq_multi_rpc
 
 import com.budjb.rabbitmq.consumer.MessageContext
 
-class RpcConsumer {
+class GoodbyeConsumer {
 
     static rabbitConfig = [
         exchange: "rpc.exchange",
@@ -11,7 +11,7 @@ class RpcConsumer {
     def handleMessage(def body, MessageContext messageContext) {
         log.info "Processing ${body}"
         def currentThread = Thread.currentThread()
-        return "Hello from \"${currentThread.name}\" (${currentThread.id})"
+        return "Goodbye from \"${currentThread.name}\" (${currentThread.id})"
     }
 
 }
