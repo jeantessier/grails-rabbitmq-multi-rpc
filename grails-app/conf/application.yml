@@ -139,4 +139,4 @@ rabbitmq:
         password: guest
     exchanges:
       - name: rpc.exchange
-        type: fanout
+        type: topic
