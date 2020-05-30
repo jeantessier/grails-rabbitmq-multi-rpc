@@ -140,3 +140,4 @@ rabbitmq:
     exchanges:
       - name: rpc.exchange
         type: fanout
+    enableSerializableConverter: true
